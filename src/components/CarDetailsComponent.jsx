@@ -33,8 +33,11 @@ function CarDetailsComponent() {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-200">
-      <div className="p-8 bg-white shadow-lg rounded-xl space-y-6 w-96">
+    <div className="w-full min-h-screen flex justify-center items-center bg-gray-200">
+      <div
+        className="leading-none p-8 bg-white shadow-lg rounded-xl space-y-6 w-full"
+        style={{ marginLeft: "10%", marginRight: "10%" }}
+      >
         <div className="flex items-center space-x-4">
           <input
             type="checkbox"
@@ -68,10 +71,11 @@ function CarDetailsComponent() {
           <input
             type="text"
             value={plate}
-            onChange={(e) => setPlate(e.target.value)}
+            onChange={(e) => setPlate(e.target.value.toUpperCase())}
             disabled={!plateEnabled}
             placeholder="Ingrese patente"
             className="form-input p-2 rounded-md w-full"
+            maxLength={6}
           />
         </div>
 
@@ -96,12 +100,15 @@ function CarDetailsComponent() {
         <h3 className="text-lg font-semibold mb-2">Resultado:</h3>
         <div
           ref={setResultRef}
-          className="p-4 border-2 border-dashed border-gray-400 rounded-md mt-4"
+          className="p-4 border-2 border-dashed border-gray-400 rounded-md mt-4 text-center"
         >
-          <div ref={innerContentRef}>
-            {brandEnabled && <p>{brand}</p>}
-            {plateEnabled && <p>{plate}</p>}
-            {chassisEnabled && <p>{chassis}</p>}
+          <div
+            ref={innerContentRef}
+            className="inline-block bg-white text-black"
+          >
+            {brandEnabled && <p className="">{brand}</p>}
+            {plateEnabled && <p className="text-9xl">{plate}</p>}
+            {chassisEnabled && <p className="text-7xl ">{chassis}</p>}
           </div>
         </div>
 
