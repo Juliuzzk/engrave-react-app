@@ -158,7 +158,7 @@ function CarDetailsComponent() {
         >
           <div
             ref={innerContentRef}
-            className="w-[870px] h-[803px] flex flex-col justify-center items-center bg-white text-black"
+            className="w-[670px] h-[603px] flex flex-col justify-center items-center bg-white text-black"
           >
             {brandEnabled && brand && (
               <img src={brand} alt="Seleccionado" className={brandSize} />
