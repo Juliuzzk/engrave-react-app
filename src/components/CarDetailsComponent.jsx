@@ -17,12 +17,12 @@ function CarDetailsComponent() {
   const carMarks = {
     opcion1: {
       nombre: "Nissan",
-      valor: "src\\assets\\marks\\NISSAN\\02.jpeg",
+      valor: "\\marks\\NISSAN\\02.jpeg",
       tipo: "Texto",
     },
     opcion2: {
       nombre: "Nissan",
-      valor: "src\\assets\\marks\\NISSAN\\01.jpeg",
+      valor: "\\marks\\NISSAN\\01.jpeg",
       tipo: "Logo",
     },
   };
@@ -200,7 +200,7 @@ function CarDetailsComponent() {
           Descargar Imagen
         </button>
       </div>
-    </div>
+	iv>
   );
 }
 
