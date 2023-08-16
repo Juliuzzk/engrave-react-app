@@ -72,6 +72,10 @@ function CarDetailsComponent() {
     }
   };
 
+  const estilo = {
+    filter: "saturate(0.9)",
+  };
+
   return (
     <div className="w-full min-h-screen flex justify-center items-center bg-gray-200">
       <div
@@ -180,6 +184,7 @@ function CarDetailsComponent() {
         <div
           ref={setResultRef}
           className="p-4 border-2 border-dashed border-gray-400 rounded-md mt-4 text-center flex justify-center items-center h-full"
+          style={estilo}
         >
           <div
             ref={innerContentRef}
@@ -200,7 +205,7 @@ function CarDetailsComponent() {
           Descargar Imagen
         </button>
       </div>
-	iv>
+    </div>
   );
 }
 
