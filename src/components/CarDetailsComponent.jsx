@@ -9,27 +9,29 @@ function CarDetailsComponent() {
   const [chassis, setChassis] = useState("");
   const [chassisEnabled, setChassisEnabled] = useState(false);
 
-  //const carBrands = ["Toyota", "Honda", "Ford", "BMW", "Mercedes"];
+  // Establecer estados para almacenar el tamaño de cada elemento
+  const [brandSize, setBrandSize] = useState("w-48"); // tamaño por defecto para la marca
+  const [plateSize, setPlateSize] = useState("text-9xl"); // tamaño por defecto para la patente
+  const [chassisSize, setChassisSize] = useState("text-7xl"); // tamaño por defecto para el chasis
 
   const carMarks = {
     opcion1: {
-        nombre: "Nissan",
-        valor: "src\\assets\\marks\\NISSAN\\02.jpeg"
+      nombre: "Nissan",
+      valor: "src\\assets\\marks\\NISSAN\\02.jpeg",
     },
     opcion2: {
-        nombre: "Opción B",
-        valor: "valorB"
+      nombre: "Opción B",
+      valor: "valorB",
     },
     opcion3: {
-        nombre: "Opción C",
-        valor: "valorC"
+      nombre: "Opción C",
+      valor: "valorC",
     },
     opcion4: {
-        nombre: "Opción D",
-        valor: "valorD"
-    }
-};
-
+      nombre: "Opción D",
+      valor: "valorD",
+    },
+  };
 
   let resultRef = React.useRef(null);
   let innerContentRef = React.useRef(null);
@@ -72,25 +74,23 @@ function CarDetailsComponent() {
             disabled={!brandEnabled}
             className="form-select p-2 rounded-md w-full"
           >
-             <option value="">Selecciona una opción</option>
-            {/* {carBrands.map((brand) => (
-              <option key={brand} value={brand}>
-                {brand}
-              </option>
-            ))} */}
+            <option value="">Selecciona una opción</option>
 
-            
-              {Object.entries(carMarks).map(([key, opcion]) => (
-                  <option key={key} value={opcion.valor}>
-                      {opcion.nombre}
-                  </option>
-              ))}
-            
-           {/* {carMarks.map((brand) => (
-              <option key={brand} value={brand}>
-                {brand}
+            {Object.entries(carMarks).map(([key, opcion]) => (
+              <option key={key} value={opcion.valor}>
+                {opcion.nombre}
               </option>
-            ))} */}
+            ))}
+          </select>
+
+          <select
+            value={brandSize}
+            onChange={(e) => setBrandSize(e.target.value)}
+            className="form-select p-2 rounded-md w-full mt-2"
+          >
+            <option value="w-48">Tamaño Pequeño</option>
+            <option value="w-96">Tamaño Medio</option>
+            <option value="w-full">Tamaño Grande</option>
           </select>
         </div>
 
@@ -111,6 +111,16 @@ function CarDetailsComponent() {
             className="form-input p-2 rounded-md w-full"
             maxLength={6}
           />
+
+          <select
+            value={plateSize}
+            onChange={(e) => setPlateSize(e.target.value)}
+            className="form-select p-2 rounded-md w-full mt-2"
+          >
+            <option value="text-5xl">Tamaño Pequeño</option>
+            <option value="text-7xl">Tamaño Medio</option>
+            <option value="text-9xl">Tamaño Grande</option>
+          </select>
         </div>
 
         <div className="flex items-center space-x-4 mt-4">
@@ -129,22 +139,34 @@ function CarDetailsComponent() {
             placeholder="Ingrese chasis"
             className="form-input p-2 rounded-md w-full"
           />
+
+          <select
+            value={chassisSize}
+            onChange={(e) => setChassisSize(e.target.value)}
+            className="form-select p-2 rounded-md w-full mt-2"
+          >
+            <option value="text-5xl">Tamaño Pequeño</option>
+            <option value="text-7xl">Tamaño Medio</option>
+            <option value="text-9xl">Tamaño Grande</option>
+          </select>
         </div>
 
         <h3 className="text-lg font-semibold mb-2">Resultado:</h3>
         <div
-  ref={setResultRef}
-  className="p-4 border-2 border-dashed border-gray-400 rounded-md mt-4 text-center flex justify-center items-center h-full"
->
-<div
-  ref={innerContentRef}
-  className="w-[1170px] h-[1103px] flex flex-col justify-center items-center bg-white text-black"
->
-  {brandEnabled && <img src={brand} alt="Seleccionado" className="w-48" />}
-  {plateEnabled && <p className="text-9xl">{plate}</p>}
-  {chassisEnabled && <p className="text-7xl">{chassis}</p>}
-</div>
-</div>
+          ref={setResultRef}
+          className="p-4 border-2 border-dashed border-gray-400 rounded-md mt-4 text-center flex justify-center items-center h-full"
+        >
+          <div
+            ref={innerContentRef}
+            className="w-[1170px] h-[1103px] flex flex-col justify-center items-center bg-white text-black"
+          >
+            {brandEnabled && brand && (
+              <img src={brand} alt="Seleccionado" className={brandSize} />
+            )}
+            {plateEnabled && <p className={plateSize}>{plate}</p>}
+            {chassisEnabled && <p className={chassisSize}>{chassis}</p>}
+          </div>
+        </div>
 
         <button
           onClick={downloadImage}
