@@ -9,7 +9,27 @@ function CarDetailsComponent() {
   const [chassis, setChassis] = useState("");
   const [chassisEnabled, setChassisEnabled] = useState(false);
 
-  const carBrands = ["Toyota", "Honda", "Ford", "BMW", "Mercedes"];
+  //const carBrands = ["Toyota", "Honda", "Ford", "BMW", "Mercedes"];
+
+  const carMarks = {
+    opcion1: {
+        nombre: "Nissan",
+        valor: "src\\assets\\marks\\NISSAN\\02.jpeg"
+    },
+    opcion2: {
+        nombre: "Opción B",
+        valor: "valorB"
+    },
+    opcion3: {
+        nombre: "Opción C",
+        valor: "valorC"
+    },
+    opcion4: {
+        nombre: "Opción D",
+        valor: "valorD"
+    }
+};
+
 
   let resultRef = React.useRef(null);
   let innerContentRef = React.useRef(null);
@@ -52,11 +72,25 @@ function CarDetailsComponent() {
             disabled={!brandEnabled}
             className="form-select p-2 rounded-md w-full"
           >
-            {carBrands.map((brand) => (
+             <option value="">Selecciona una opción</option>
+            {/* {carBrands.map((brand) => (
               <option key={brand} value={brand}>
                 {brand}
               </option>
-            ))}
+            ))} */}
+
+            
+              {Object.entries(carMarks).map(([key, opcion]) => (
+                  <option key={key} value={opcion.valor}>
+                      {opcion.nombre}
+                  </option>
+              ))}
+            
+           {/* {carMarks.map((brand) => (
+              <option key={brand} value={brand}>
+                {brand}
+              </option>
+            ))} */}
           </select>
         </div>
 
@@ -99,18 +133,18 @@ function CarDetailsComponent() {
 
         <h3 className="text-lg font-semibold mb-2">Resultado:</h3>
         <div
-          ref={setResultRef}
-          className="p-4 border-2 border-dashed border-gray-400 rounded-md mt-4 text-center"
-        >
-          <div
-            ref={innerContentRef}
-            className="inline-block bg-white text-black"
-          >
-            {brandEnabled && <p className="">{brand}</p>}
-            {plateEnabled && <p className="text-9xl">{plate}</p>}
-            {chassisEnabled && <p className="text-7xl ">{chassis}</p>}
-          </div>
-        </div>
+  ref={setResultRef}
+  className="p-4 border-2 border-dashed border-gray-400 rounded-md mt-4 text-center flex justify-center items-center h-full"
+>
+<div
+  ref={innerContentRef}
+  className="w-[1170px] h-[1103px] flex flex-col justify-center items-center bg-white text-black"
+>
+  {brandEnabled && <img src={brand} alt="Seleccionado" className="w-48" />}
+  {plateEnabled && <p className="text-9xl">{plate}</p>}
+  {chassisEnabled && <p className="text-7xl">{chassis}</p>}
+</div>
+</div>
 
         <button
           onClick={downloadImage}
