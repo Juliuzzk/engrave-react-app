@@ -48,30 +48,6 @@ function CarDetailsComponent() {
   //   }
   // };
 
-  // const downloadImage = async () => {
-  //   try {
-  //     const clonedNode = innerContentRef.current.cloneNode(true);
-  //     clonedNode.classList.add("w-[670px]");
-  //     clonedNode.classList.add("h-[603px]");
-
-  //     // Adjuntamos el nodo clonado al cuerpo pero lo hacemos invisible
-  //     // clonedNode.style.visibility = "hidden";
-  //     document.body.appendChild(clonedNode);
-
-  //     const dataUrl = await toPng(clonedNode);
-
-  //     const link = document.createElement("a");
-  //     link.download = "car-details.png";
-  //     link.href = dataUrl;
-  //     link.click();
-
-  //     // Después de tomar la imagen, se elimina el nodo clonado
-  //     document.body.removeChild(clonedNode);
-  //   } catch (error) {
-  //     console.error("Error al crear la imagen", error);
-  //   }
-  // };
-
   const downloadImage = async () => {
     try {
       const clonedNode = innerContentRef.current.cloneNode(true);
@@ -79,21 +55,18 @@ function CarDetailsComponent() {
       clonedNode.classList.add("h-[603px]");
 
       // Adjuntamos el nodo clonado al cuerpo pero lo hacemos invisible
-      clonedNode.style.visibility = "hidden";
+      // clonedNode.style.visibility = "hidden";
       document.body.appendChild(clonedNode);
 
-      // Se establece un retraso para permitir que el navegador renderice el nodo clonado
-      setTimeout(async () => {
-        const dataUrl = await toPng(clonedNode);
+      const dataUrl = await toPng(clonedNode);
 
-        const link = document.createElement("a");
-        link.download = "car-details.png";
-        link.href = dataUrl;
-        link.click();
+      const link = document.createElement("a");
+      link.download = "car-details.png";
+      link.href = dataUrl;
+      link.click();
 
-        // Después de tomar la imagen, se elimina el nodo clonado
-        document.body.removeChild(clonedNode);
-      }, 2000); // 500ms de retraso
+      // Después de tomar la imagen, se elimina el nodo clonado
+      document.body.removeChild(clonedNode);
     } catch (error) {
       console.error("Error al crear la imagen", error);
     }
