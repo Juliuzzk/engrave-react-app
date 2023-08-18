@@ -6,12 +6,26 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
+    <style>
+      * { filter: saturate(0.9) }
+    </style>
   </head>
   <body>
-    <div class="p-4 bg-gray-200">
-      <img src="data:image/png;base64,{{image}}" />
-      <p class="text-blue-600">{{texto1}}</p>
-      <p>{{texto2}}</p>
+    <div class="text-center flex justify-center items-center h-screen">
+      <div
+        class="flex flex-col justify-center items-center bg-white text-black p-0"
+      >
+        <img
+          src="data:image/png;base64,{{image}}"
+          alt="Seleccionado"
+          class="w-48"
+        />
+        <p class="text-7xl mt-0 mb-0" style="line-height: 1;">{{texto1}}</p>
+        <p
+          class="text-7xl mt-0"
+          style="line-height: 0.9; letter-spacing: -0.05em;"
+        >{{texto2}}</p>
+      </div>
     </div>
   </body>
 </html>

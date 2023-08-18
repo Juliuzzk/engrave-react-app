@@ -49,8 +49,8 @@ function CarDetailsComponent() {
       const base64Image = btoa(
         new Uint8Array(response.data).reduce(
           (data, byte) => data + String.fromCharCode(byte),
-          ""
-        )
+          "",
+        ),
       );
 
       console.log("Imagen convertida a base64:", base64Image);
@@ -74,8 +74,13 @@ function CarDetailsComponent() {
           image: base64Image,
           texto1: plate,
           texto2: chassis,
+          brandEnabled: brandEnabled,
+          plateEnabled: plateEnabled,
+          brandSize: brandSize,
+          plateSize: plateSize,
+          chassisSize: chassisSize,
         },
-        { responseType: "blob" }
+        { responseType: "blob" },
       );
 
       const blob = new Blob([response.data], { type: "image/png" });
