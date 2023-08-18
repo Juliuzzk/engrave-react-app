@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import { toPng } from "html-to-image";
+import axios from "axios";
 
 function CarDetailsComponent() {
   const [brand, setBrand] = useState("");
@@ -36,39 +36,57 @@ function CarDetailsComponent() {
     }
   }, []);
 
-  // const downloadImage = async () => {
-  //   try {
-  //     const dataUrl = await toPng(innerContentRef.current);
-  //     const link = document.createElement("a");
-  //     link.download = "car-details.png";
-  //     link.href = dataUrl;
-  //     link.click();
-  //   } catch (error) {
-  //     console.error("Error al crear la imagen", error);
-  //   }
-  // };
+  const sendImageAsBase64 = async (imageUrl) => {
+    try {
+      console.log("Iniciando solicitud de imagen:", imageUrl);
+
+      const response = await axios.get(imageUrl, {
+        responseType: "arraybuffer",
+      });
+
+      console.log("Respuesta de la solicitud:", response);
+
+      const base64Image = btoa(
+        new Uint8Array(response.data).reduce(
+          (data, byte) => data + String.fromCharCode(byte),
+          ""
+        )
+      );
+
+      console.log("Imagen convertida a base64:", base64Image);
+
+      return base64Image;
+    } catch (error) {
+      console.error("Error al obtener la imagen:", error);
+      throw error;
+    }
+  };
 
   const downloadImage = async () => {
     try {
-      const clonedNode = innerContentRef.current.cloneNode(true);
-      clonedNode.classList.add("w-[670px]");
-      clonedNode.classList.add("h-[603px]");
+      const imageUrl = brand;
+      console.log(brand);
+      const base64Image = await sendImageAsBase64(imageUrl);
 
-      // Adjuntamos el nodo clonado al cuerpo pero lo hacemos invisible
-      // clonedNode.style.visibility = "hidden";
-      document.body.appendChild(clonedNode);
+      const response = await axios.post(
+        "http://localhost:3001/generate-image",
+        {
+          image: base64Image,
+          texto1: plate,
+          texto2: chassis,
+        },
+        { responseType: "blob" }
+      );
 
-      const dataUrl = await toPng(clonedNode);
-
+      const blob = new Blob([response.data], { type: "image/png" });
+      const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
-      link.download = "car-details.png";
-      link.href = dataUrl;
+      link.href = url;
+      link.download = "imagen.png";
       link.click();
-
-      // Después de tomar la imagen, se elimina el nodo clonado
-      document.body.removeChild(clonedNode);
+      URL.revokeObjectURL(url);
     } catch (error) {
-      console.error("Error al crear la imagen", error);
+      console.error("Error generando la imagen:", error);
     }
   };
 
