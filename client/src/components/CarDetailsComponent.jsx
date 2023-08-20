@@ -76,6 +76,7 @@ function CarDetailsComponent() {
           texto2: chassis,
           brandEnabled: brandEnabled,
           plateEnabled: plateEnabled,
+          chassisEnabled: chassisEnabled,
           brandSize: brandSize,
           plateSize: plateSize,
           chassisSize: chassisSize,

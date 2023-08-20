@@ -7,7 +7,8 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
     <style>
-      * { filter: saturate(0.9) }
+
+      * { filter: saturate(0.9); }
     </style>
   </head>
   <body>
@@ -15,16 +16,21 @@
       <div
         class="flex flex-col justify-center items-center bg-white text-black p-0"
       >
-        <img
-          src="data:image/png;base64,{{image}}"
-          alt="Seleccionado"
-          class="w-48"
-        />
-        <p class="text-7xl mt-0 mb-0" style="line-height: 1;">{{texto1}}</p>
-        <p
-          class="text-7xl mt-0"
-          style="line-height: 0.9; letter-spacing: -0.05em;"
-        >{{texto2}}</p>
+        {{#if brandEnabled}}
+          <img src="data:image/png;base64,{{image}}" class="{{brandSize}}" />
+        {{/if}}
+        {{#if plateEnabled}}
+          <p
+            class="{{plateSize}} mt-0 mb-0"
+            style="line-height: 1;"
+          >{{texto1}}</p>
+        {{/if}}
+        {{#if chassisEnabled}}
+          <p
+            class="{{chassisSize}} t-0"
+            style="line-height: 0.9; letter-spacing: -0.05em;"
+          >{{texto2}}</p>
+        {{/if}}
       </div>
     </div>
   </body>

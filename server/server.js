@@ -16,9 +16,10 @@ const templateHtml = fs.readFileSync(
 	"utf-8",
 );
 
+
 app.post("/generate-image", async (req, res) => {
-	const { image, texto1, texto2 } = req.body;
-	let browser;
+	const {image, texto1, texto2,  brandEnabled, plateEnabled, chassisEnabled, brandSize, plateSize, chassisSize} = req.body;
+    
 	try {
 		browser = await puppeteer.launch({ headless: "new" });
 
@@ -26,9 +27,13 @@ app.post("/generate-image", async (req, res) => {
 
 		// Compila el template Handlebars
 		const template = Handlebars.compile(templateHtml);
-		const finalHtml = template({ image, texto1, texto2 });
+		const finalHtml = template({image, texto1, texto2,  brandEnabled, plateEnabled, chassisEnabled, brandSize, plateSize, chassisSize});
+        
+        console.log(texto1, texto2,  brandEnabled, plateEnabled, chassisEnabled, brandSize, plateSize, chassisSize )
 		await page.setContent(finalHtml);
-		await page.waitForSelector("img");
+		if (brandEnabled)
+            await page.waitForSelector("img");
+       
 		const screenshot = await page.screenshot();
 		res.send(screenshot);
 	} catch (error) {
