@@ -11,7 +11,7 @@ const app = express();
 
 // Constantes
 const RESOURCES_URL = process.env.RESOURCES_URL;
-const WEB_DRIVER = process.env.WEB_DRIVER | '';
+const WEB_DRIVER = process.env.WEB_DRIVER;
 app.use(cors());
 app.use(bodyParser.json({ limit: "50mb" }));
 
