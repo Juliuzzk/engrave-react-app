@@ -1,3 +1,5 @@
+require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
+
 const express = require("express");
 const puppeteer = require("puppeteer");
 const bodyParser = require("body-parser");
@@ -6,6 +8,9 @@ const fs = require("fs");
 const cors = require("cors");
 
 const app = express();
+
+// Constantes
+const RESOURCES_URL = process.env.RESOURCES_URL;
 
 app.use(cors());
 app.use(bodyParser.json({ limit: "50mb" }));
@@ -27,7 +32,7 @@ app.post("/generate-image", async (req, res) => {
 
 		// Compila el template Handlebars
 		const template = Handlebars.compile(templateHtml);
-		const finalHtml = template({image, texto1, texto2,  brandEnabled, plateEnabled, chassisEnabled, brandSize, plateSize, chassisSize});
+		const finalHtml = template({image, texto1, texto2,  brandEnabled, plateEnabled, chassisEnabled, brandSize, plateSize, chassisSize, RESOURCES_URL});
         
         console.log(texto1, texto2,  brandEnabled, plateEnabled, chassisEnabled, brandSize, plateSize, chassisSize )
 		await page.setContent(finalHtml);
@@ -46,7 +51,8 @@ app.post("/generate-image", async (req, res) => {
 	}
 });
 
-const PORT = 3001;
+const PORT = process.env.API_PORT || 3001 ;
+const URL = process.env.API_URL || 'localhost';
 app.listen(PORT, () => {
 	console.log(`Server is running on port ${PORT}`);
 });

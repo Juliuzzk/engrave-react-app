@@ -4,7 +4,11 @@
     <title>Generated Image</title>
     <link
       rel="stylesheet"
+      {{#if RESOURCES_URL}}
+      href="{{RESOURCES_URL/tailwind.min.css}}"
+      {{else}}
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      {{/if}}
     />
     <style>
 
