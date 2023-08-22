@@ -11,7 +11,7 @@ const app = express();
 
 // Constantes
 const RESOURCES_URL = process.env.RESOURCES_URL;
-
+const WEB_DRIVER = process.env.WEB_DRIVER | '';
 app.use(cors());
 app.use(bodyParser.json({ limit: "50mb" }));
 
@@ -26,7 +26,13 @@ app.post("/generate-image", async (req, res) => {
 	const {image, texto1, texto2,  brandEnabled, plateEnabled, chassisEnabled, brandSize, plateSize, chassisSize} = req.body;
     
 	try {
-		browser = await puppeteer.launch({ headless: "new" });
+		if(!WEB_DRIVER){
+			browser = await puppeteer.launch({ headless: "new" });
+
+		}else{
+
+			browser = await puppeteer.launch({ executablePath: WEB_DRIVER, headless: "new" });
+		}
 
 		const page = await browser.newPage();
 
