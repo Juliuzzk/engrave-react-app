@@ -1,7 +1,10 @@
 import React, { useState, useCallback } from "react";
 import axios from "axios";
 
+
+
 function CarDetailsComponent() {
+  const API_URL =  import.meta.env.VITE_API_URL || "http://localhost";
   const [brand, setBrand] = useState("");
   const [brandEnabled, setBrandEnabled] = useState(false);
   const [plate, setPlate] = useState("");
@@ -69,7 +72,7 @@ function CarDetailsComponent() {
       const base64Image = await sendImageAsBase64(imageUrl);
 
       const response = await axios.post(
-        "http://localhost:3001/generate-image",
+        `${API_URL}/generate-image`,
         {
           image: base64Image,
           texto1: plate,
