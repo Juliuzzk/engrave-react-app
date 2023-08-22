@@ -1,0 +1,697 @@
+{
+    "opcion1": {
+        "nombre": "VOLKSWAGEN",
+        "valor": "\\marks\\VOLKSWAGEN\\02- MARCA.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion2": {
+        "nombre": "VOLKSWAGEN",
+        "valor": "\\marks\\VOLKSWAGEN\\01- LOGO TOYOTA.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion3": {
+        "nombre": "PORSCHE",
+        "valor": "\\marks\\PORSCHE\\02- MARCA PORSHE.png",
+        "tipo": "Logo"
+    },
+    "opcion4": {
+        "nombre": "PORSCHE",
+        "valor": "\\marks\\PORSCHE\\01- LOGO PORSCHE.png",
+        "tipo": "Logo"
+    },
+    "opcion5": {
+        "nombre": "DONGFENG",
+        "valor": "\\marks\\DONGFENG\\01- LOGO DONGFENG.png",
+        "tipo": "Logo"
+    },
+    "opcion6": {
+        "nombre": "DONGFENG",
+        "valor": "\\marks\\DONGFENG\\02- MARCA DONGFENG.png",
+        "tipo": "Logo"
+    },
+    "opcion7": {
+        "nombre": "LIFAN",
+        "valor": "\\marks\\LIFAN\\02 LIFAN MARCA.png",
+        "tipo": "Logo"
+    },
+    "opcion8": {
+        "nombre": "LIFAN",
+        "valor": "\\marks\\LIFAN\\01 LIFAN LOGO.png",
+        "tipo": "Logo"
+    },
+    "opcion9": {
+        "nombre": "MITSUBISHI",
+        "valor": "\\marks\\MITSUBISHI\\01.jpg",
+        "tipo": "Logo"
+    },
+    "opcion10": {
+        "nombre": "MITSUBISHI",
+        "valor": "\\marks\\MITSUBISHI\\02.png",
+        "tipo": "Logo"
+    },
+    "opcion11": {
+        "nombre": "RENAULT",
+        "valor": "\\marks\\RENAULT\\04-RENAULT ANTIGUO.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion12": {
+        "nombre": "RENAULT",
+        "valor": "\\marks\\RENAULT\\03- LOGO RENAULT ANTIGUO.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion13": {
+        "nombre": "CUPRA",
+        "valor": "\\marks\\CUPRA\\01- CUPRA LOGO.png",
+        "tipo": "Logo"
+    },
+    "opcion14": {
+        "nombre": "CUPRA",
+        "valor": "\\marks\\CUPRA\\02- MARCA CUPRA.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion15": {
+        "nombre": "FERRARI",
+        "valor": "\\marks\\FERRARI\\ferrari-logo-brand-car-symbol-with-name-black-design-italian-automobile-illustration-free-vector.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion16": {
+        "nombre": "FORD",
+        "valor": "\\marks\\FORD\\01.jpg",
+        "tipo": "Logo"
+    },
+    "opcion17": {
+        "nombre": "FORD",
+        "valor": "\\marks\\FORD\\02.png",
+        "tipo": "Logo"
+    },
+    "opcion18": {
+        "nombre": "MG MORRIS GARAGE",
+        "valor": "\\marks\\MG MORRIS GARAGE\\02.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion19": {
+        "nombre": "MG MORRIS GARAGE",
+        "valor": "\\marks\\MG MORRIS GARAGE\\03.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion20": {
+        "nombre": "MERCEDES BENZ",
+        "valor": "\\marks\\MERCEDES BENZ\\01.jpg",
+        "tipo": "Logo"
+    },
+    "opcion21": {
+        "nombre": "MERCEDES BENZ",
+        "valor": "\\marks\\MERCEDES BENZ\\02.gif",
+        "tipo": "Logo"
+    },
+    "opcion22": {
+        "nombre": "CHANGAN",
+        "valor": "\\marks\\CHANGAN\\01. LOGO CHANGAN.jpg",
+        "tipo": "Logo"
+    },
+    "opcion23": {
+        "nombre": "CHANGAN",
+        "valor": "\\marks\\CHANGAN\\02 TEXTO CHANGAN.png",
+        "tipo": "Logo"
+    },
+    "opcion24": {
+        "nombre": "LANDWIND",
+        "valor": "\\marks\\LANDWIND\\01-LOGO LANDWIND.png",
+        "tipo": "Logo"
+    },
+    "opcion25": {
+        "nombre": "LANDWIND",
+        "valor": "\\marks\\LANDWIND\\02- MARCA LANDWIND.png",
+        "tipo": "Logo"
+    },
+    "opcion26": {
+        "nombre": "BAIC",
+        "valor": "\\marks\\BAIC\\02-BAIC TEXTO.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion27": {
+        "nombre": "BAIC",
+        "valor": "\\marks\\BAIC\\01-LOGO.png",
+        "tipo": "Logo"
+    },
+    "opcion28": {
+        "nombre": "MINI",
+        "valor": "\\marks\\MINI\\01.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion29": {
+        "nombre": "JEEP",
+        "valor": "\\marks\\JEEP\\01.png",
+        "tipo": "Logo"
+    },
+    "opcion30": {
+        "nombre": "MAZDA",
+        "valor": "\\marks\\MAZDA\\02.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion31": {
+        "nombre": "MAZDA",
+        "valor": "\\marks\\MAZDA\\03.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion32": {
+        "nombre": "PROTON",
+        "valor": "\\marks\\PROTON\\02- MARCA PROTON.png",
+        "tipo": "Logo"
+    },
+    "opcion33": {
+        "nombre": "PROTON",
+        "valor": "\\marks\\PROTON\\01-LOGO PROTON.png",
+        "tipo": "Logo"
+    },
+    "opcion34": {
+        "nombre": "DAIHATSU",
+        "valor": "\\marks\\DAIHATSU\\01- DAIHATSU.png",
+        "tipo": "Logo"
+    },
+    "opcion35": {
+        "nombre": "DAIHATSU",
+        "valor": "\\marks\\DAIHATSU\\02- MARCA HAIHATSU.png",
+        "tipo": "Logo"
+    },
+    "opcion36": {
+        "nombre": "FOTON",
+        "valor": "\\marks\\FOTON\\FOTON LETRAS.png",
+        "tipo": "Logo"
+    },
+    "opcion37": {
+        "nombre": "FOTON",
+        "valor": "\\marks\\FOTON\\FOTON EMBLEMA OK.png",
+        "tipo": "Logo"
+    },
+    "opcion38": {
+        "nombre": "JMC",
+        "valor": "\\marks\\JMC\\02- MARCA JMC.png",
+        "tipo": "Logo"
+    },
+    "opcion39": {
+        "nombre": "JMC",
+        "valor": "\\marks\\JMC\\01- LOGO JMC.png",
+        "tipo": "Logo"
+    },
+    "opcion40": {
+        "nombre": "TATA",
+        "valor": "\\marks\\TATA\\01- TATA LOGO.png",
+        "tipo": "Logo"
+    },
+    "opcion41": {
+        "nombre": "TATA",
+        "valor": "\\marks\\TATA\\02- TATA MARCA.png",
+        "tipo": "Logo"
+    },
+    "opcion42": {
+        "nombre": "LAMBORGHINI",
+        "valor": "\\marks\\LAMBORGHINI\\descarga.png",
+        "tipo": "Logo"
+    },
+    "opcion43": {
+        "nombre": "LAMBORGHINI",
+        "valor": "\\marks\\LAMBORGHINI\\images.png",
+        "tipo": "Logo"
+    },
+    "opcion44": {
+        "nombre": "KIA NUEVO",
+        "valor": "\\marks\\KIA NUEVO\\01.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion45": {
+        "nombre": "BRILIANCE",
+        "valor": "\\marks\\BRILIANCE\\02 MARCA BRILLIANCE.png",
+        "tipo": "Logo"
+    },
+    "opcion46": {
+        "nombre": "BRILIANCE",
+        "valor": "\\marks\\BRILIANCE\\01- LOGO.png",
+        "tipo": "Logo"
+    },
+    "opcion47": {
+        "nombre": "RENAULT NUEVO",
+        "valor": "\\marks\\RENAULT NUEVO\\01- LOGO RENAULT NUEVO.png",
+        "tipo": "Logo"
+    },
+    "opcion48": {
+        "nombre": "RENAULT NUEVO",
+        "valor": "\\marks\\RENAULT NUEVO\\02- MARCA RENAULT NUEVO.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion49": {
+        "nombre": "FAW",
+        "valor": "\\marks\\FAW\\01- LOGO FAW.png",
+        "tipo": "Logo"
+    },
+    "opcion50": {
+        "nombre": "FAW",
+        "valor": "\\marks\\FAW\\02-MARCA FAW.png",
+        "tipo": "Logo"
+    },
+    "opcion51": {
+        "nombre": "KAIYI",
+        "valor": "\\marks\\KAIYI\\01- LOGO KAIYI.png",
+        "tipo": "Logo"
+    },
+    "opcion52": {
+        "nombre": "KAIYI",
+        "valor": "\\marks\\KAIYI\\02- MARCA KAIYI.png",
+        "tipo": "Logo"
+    },
+    "opcion53": {
+        "nombre": "LAND ROVER",
+        "valor": "\\marks\\LAND ROVER\\02- LOGO LAND ROVER.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion54": {
+        "nombre": "LAND ROVER",
+        "valor": "\\marks\\LAND ROVER\\01- LOGO LAND ROVER.png",
+        "tipo": "Logo"
+    },
+    "opcion55": {
+        "nombre": "DFSK",
+        "valor": "\\marks\\DFSK\\01- LOGO DFSK.png",
+        "tipo": "Logo"
+    },
+    "opcion56": {
+        "nombre": "DFSK",
+        "valor": "\\marks\\DFSK\\02- MARCA DFSK.png",
+        "tipo": "Logo"
+    },
+    "opcion57": {
+        "nombre": "HYUNDAI",
+        "valor": "\\marks\\HYUNDAI\\02- MARCA HYUNDAI.png",
+        "tipo": "Logo"
+    },
+    "opcion58": {
+        "nombre": "HYUNDAI",
+        "valor": "\\marks\\HYUNDAI\\01- LOGO HYUNDAI.jpg",
+        "tipo": "Logo"
+    },
+    "opcion59": {
+        "nombre": "SAMSUNG",
+        "valor": "\\marks\\SAMSUNG\\Samsung 02.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion60": {
+        "nombre": "SAMSUNG",
+        "valor": "\\marks\\SAMSUNG\\Samsung 01.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion61": {
+        "nombre": "KIA ANTIGUO",
+        "valor": "\\marks\\KIA ANTIGUO\\01- LOGO KIA ANTIGUO.png",
+        "tipo": "Logo"
+    },
+    "opcion62": {
+        "nombre": "KIA ANTIGUO",
+        "valor": "\\marks\\KIA ANTIGUO\\02- KIA MARCA.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion63": {
+        "nombre": "ZNA",
+        "valor": "\\marks\\ZNA\\01- LOGO ZNA.png",
+        "tipo": "Logo"
+    },
+    "opcion64": {
+        "nombre": "ZNA",
+        "valor": "\\marks\\ZNA\\02- MARCA ZNA.png",
+        "tipo": "Logo"
+    },
+    "opcion65": {
+        "nombre": "OPEL",
+        "valor": "\\marks\\OPEL\\02- MARCA OPEL.png",
+        "tipo": "Logo"
+    },
+    "opcion66": {
+        "nombre": "OPEL",
+        "valor": "\\marks\\OPEL\\01- LOGO OPEL.png",
+        "tipo": "Logo"
+    },
+    "opcion67": {
+        "nombre": "CHEVROLET",
+        "valor": "\\marks\\CHEVROLET\\01-LOGO CHEVROLET.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion68": {
+        "nombre": "CHEVROLET",
+        "valor": "\\marks\\CHEVROLET\\01- MARCA CHEVROLET.png",
+        "tipo": "Logo"
+    },
+    "opcion69": {
+        "nombre": "SSANG YONG",
+        "valor": "\\marks\\SSANG YONG\\01- LOGO SSANGYONG.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion70": {
+        "nombre": "SSANG YONG",
+        "valor": "\\marks\\SSANG YONG\\02- MARCA SSANGYONG.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion71": {
+        "nombre": "IVECO",
+        "valor": "\\marks\\IVECO\\02- MARCA IVECO.png",
+        "tipo": "Logo"
+    },
+    "opcion72": {
+        "nombre": "IVECO",
+        "valor": "\\marks\\IVECO\\01-LOGO IVECO.png",
+        "tipo": "Logo"
+    },
+    "opcion73": {
+        "nombre": "TOYOTA",
+        "valor": "\\marks\\TOYOTA\\01- LOGO TOYOTA.jpg",
+        "tipo": "Logo"
+    },
+    "opcion74": {
+        "nombre": "TOYOTA",
+        "valor": "\\marks\\TOYOTA\\02- MARCA TOYOTA.png",
+        "tipo": "Logo"
+    },
+    "opcion75": {
+        "nombre": "JETOUR",
+        "valor": "\\marks\\JETOUR\\01- LOGO JETOUR.png",
+        "tipo": "Logo"
+    },
+    "opcion76": {
+        "nombre": "NISSAN",
+        "valor": "\\marks\\NISSAN\\01.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion77": {
+        "nombre": "NISSAN",
+        "valor": "\\marks\\NISSAN\\02.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion78": {
+        "nombre": "DODGE",
+        "valor": "\\marks\\DODGE\\02- MARCA DODGE.png",
+        "tipo": "Logo"
+    },
+    "opcion79": {
+        "nombre": "DODGE",
+        "valor": "\\marks\\DODGE\\01- LOGO DODGE.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion80": {
+        "nombre": "LEXUS",
+        "valor": "\\marks\\LEXUS\\02- MARCA LEXUS.png",
+        "tipo": "Logo"
+    },
+    "opcion81": {
+        "nombre": "LEXUS",
+        "valor": "\\marks\\LEXUS\\01- LOGO LEXUS.png",
+        "tipo": "Logo"
+    },
+    "opcion82": {
+        "nombre": "GAC",
+        "valor": "\\marks\\GAC\\02- MARCA GAC.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion83": {
+        "nombre": "GAC",
+        "valor": "\\marks\\GAC\\01- LOGO GAC.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion84": {
+        "nombre": "AUDI",
+        "valor": "\\marks\\AUDI\\01.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion85": {
+        "nombre": "AUDI",
+        "valor": "\\marks\\AUDI\\02.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion86": {
+        "nombre": "MAXUS",
+        "valor": "\\marks\\MAXUS\\01.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion87": {
+        "nombre": "MAXUS",
+        "valor": "\\marks\\MAXUS\\02.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion88": {
+        "nombre": "VOLVO",
+        "valor": "\\marks\\VOLVO\\01.png",
+        "tipo": "Logo"
+    },
+    "opcion89": {
+        "nombre": "VOLVO",
+        "valor": "\\marks\\VOLVO\\03.png",
+        "tipo": "Logo"
+    },
+    "opcion90": {
+        "nombre": "VOLVO",
+        "valor": "\\marks\\VOLVO\\02.png",
+        "tipo": "Logo"
+    },
+    "opcion91": {
+        "nombre": "HAVAL",
+        "valor": "\\marks\\HAVAL\\01- HAVAL.png",
+        "tipo": "Logo"
+    },
+    "opcion92": {
+        "nombre": "PEUGEOT",
+        "valor": "\\marks\\PEUGEOT\\01-LOGO PEUGEOT NUEVO.png",
+        "tipo": "Logo"
+    },
+    "opcion93": {
+        "nombre": "PEUGEOT",
+        "valor": "\\marks\\PEUGEOT\\02- LOGO PEUGEOT ANTIGUO.png",
+        "tipo": "Logo"
+    },
+    "opcion94": {
+        "nombre": "PEUGEOT",
+        "valor": "\\marks\\PEUGEOT\\03- MARCA PEUGEOT.png",
+        "tipo": "Logo"
+    },
+    "opcion95": {
+        "nombre": "SUBARU",
+        "valor": "\\marks\\SUBARU\\01- LOGO SUBARU.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion96": {
+        "nombre": "SUBARU",
+        "valor": "\\marks\\SUBARU\\02- MARCA SUBARU.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion97": {
+        "nombre": "DFM",
+        "valor": "\\marks\\DFM\\01- LOGO DFM.png",
+        "tipo": "Logo"
+    },
+    "opcion98": {
+        "nombre": "DFM",
+        "valor": "\\marks\\DFM\\02- MARCA DFM.png",
+        "tipo": "Logo"
+    },
+    "opcion99": {
+        "nombre": "MAHINDRA",
+        "valor": "\\marks\\MAHINDRA\\01- LOGO MAHINDRA.png",
+        "tipo": "Logo"
+    },
+    "opcion100": {
+        "nombre": "MAHINDRA",
+        "valor": "\\marks\\MAHINDRA\\02- MARCA MAHINDRA.png",
+        "tipo": "Logo"
+    },
+    "opcion101": {
+        "nombre": "ALFA ROMEO",
+        "valor": "\\marks\\ALFA ROMEO\\TEXTO.png",
+        "tipo": "Logo"
+    },
+    "opcion102": {
+        "nombre": "ALFA ROMEO",
+        "valor": "\\marks\\ALFA ROMEO\\alfa-romeo-new-black9279.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion103": {
+        "nombre": "DS AUTOMOVILES",
+        "valor": "\\marks\\DS AUTOMOVILES\\03- MARCA DS AUTOMOVILES.png",
+        "tipo": "Logo"
+    },
+    "opcion104": {
+        "nombre": "DS AUTOMOVILES",
+        "valor": "\\marks\\DS AUTOMOVILES\\02- MARCA DS.png",
+        "tipo": "Logo"
+    },
+    "opcion105": {
+        "nombre": "DS AUTOMOVILES",
+        "valor": "\\marks\\DS AUTOMOVILES\\01- LOGO DS AUTOMOBILES.png",
+        "tipo": "Logo"
+    },
+    "opcion106": {
+        "nombre": "SKODA",
+        "valor": "\\marks\\SKODA\\02- MARCA SKODA.png",
+        "tipo": "Logo"
+    },
+    "opcion107": {
+        "nombre": "SKODA",
+        "valor": "\\marks\\SKODA\\01- LOGO SKODA.png",
+        "tipo": "Logo"
+    },
+    "opcion108": {
+        "nombre": "CHERY",
+        "valor": "\\marks\\CHERY\\01- LOGO CHERY.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion109": {
+        "nombre": "CHERY",
+        "valor": "\\marks\\CHERY\\02- MARCA CHERY.png",
+        "tipo": "Logo"
+    },
+    "opcion110": {
+        "nombre": "CHRYSLER",
+        "valor": "\\marks\\CHRYSLER\\01-LOGO CHRYSLER.png",
+        "tipo": "Logo"
+    },
+    "opcion111": {
+        "nombre": "CHRYSLER",
+        "valor": "\\marks\\CHRYSLER\\Copia de 01-LOGO CHRYSLER.png",
+        "tipo": "Logo"
+    },
+    "opcion112": {
+        "nombre": "JAGUAR",
+        "valor": "\\marks\\JAGUAR\\01.png",
+        "tipo": "Logo"
+    },
+    "opcion113": {
+        "nombre": "JAGUAR",
+        "valor": "\\marks\\JAGUAR\\02.png",
+        "tipo": "Logo"
+    },
+    "opcion114": {
+        "nombre": "BMW",
+        "valor": "\\marks\\BMW\\02 LOGO.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion115": {
+        "nombre": "BMW",
+        "valor": "\\marks\\BMW\\03 LOGO.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion116": {
+        "nombre": "BMW",
+        "valor": "\\marks\\BMW\\01-LOGO.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion117": {
+        "nombre": "FIAT",
+        "valor": "\\marks\\FIAT\\Imagen 02.GIF",
+        "tipo": "Logo"
+    },
+    "opcion118": {
+        "nombre": "FIAT",
+        "valor": "\\marks\\FIAT\\Imagen 01.jpg",
+        "tipo": "Logo"
+    },
+    "opcion119": {
+        "nombre": "EXEED",
+        "valor": "\\marks\\EXEED\\01- LOGO EXEED.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion120": {
+        "nombre": "GREAT WALL",
+        "valor": "\\marks\\GREAT WALL\\02.png",
+        "tipo": "Logo"
+    },
+    "opcion121": {
+        "nombre": "GREAT WALL",
+        "valor": "\\marks\\GREAT WALL\\01.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion122": {
+        "nombre": "JAC",
+        "valor": "\\marks\\JAC\\02- MARCA JAC.png",
+        "tipo": "Logo"
+    },
+    "opcion123": {
+        "nombre": "JAC",
+        "valor": "\\marks\\JAC\\03- MARCA JAC.png",
+        "tipo": "Logo"
+    },
+    "opcion124": {
+        "nombre": "JAC",
+        "valor": "\\marks\\JAC\\01- JAC LOGO.png",
+        "tipo": "Logo"
+    },
+    "opcion125": {
+        "nombre": "CITROEN",
+        "valor": "\\marks\\CITROEN\\02-MARCA CITROEN.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion126": {
+        "nombre": "CITROEN",
+        "valor": "\\marks\\CITROEN\\01- LOGO CITROEN.png",
+        "tipo": "Logo"
+    },
+    "opcion127": {
+        "nombre": "CITROEN",
+        "valor": "\\marks\\CITROEN\\03- MARCA CITROEN.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion128": {
+        "nombre": "HONDA",
+        "valor": "\\marks\\HONDA\\01.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion129": {
+        "nombre": "HONDA",
+        "valor": "\\marks\\HONDA\\02.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion130": {
+        "nombre": "INFINITY",
+        "valor": "\\marks\\INFINITY\\01-LOGO INFINITI.png",
+        "tipo": "Logo"
+    },
+    "opcion131": {
+        "nombre": "INFINITY",
+        "valor": "\\marks\\INFINITY\\02-MARCA INFINITI.png",
+        "tipo": "Logo"
+    },
+    "opcion132": {
+        "nombre": "GEELY",
+        "valor": "\\marks\\GEELY\\02- MARCA GEELY.png",
+        "tipo": "Logo"
+    },
+    "opcion133": {
+        "nombre": "GEELY",
+        "valor": "\\marks\\GEELY\\01- LOGO GEELY.png",
+        "tipo": "Logo"
+    },
+    "opcion134": {
+        "nombre": "SUZUKI",
+        "valor": "\\marks\\SUZUKI\\01- MARCA SUZUKI.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion135": {
+        "nombre": "SUZUKI",
+        "valor": "\\marks\\SUZUKI\\02- LOGO SUZUKI.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion136": {
+        "nombre": "RAM",
+        "valor": "\\marks\\RAM\\02- MARCA RAM.png",
+        "tipo": "Logo"
+    },
+    "opcion137": {
+        "nombre": "RAM",
+        "valor": "\\marks\\RAM\\01- LOGO RAM.jpeg",
+        "tipo": "Logo"
+    },
+    "opcion138": {
+        "nombre": "SEAT",
+        "valor": "\\marks\\SEAT\\01- LOGO SEAT.png",
+        "tipo": "Logo"
+    },
+    "opcion139": {
+        "nombre": "SEAT",
+        "valor": "\\marks\\SEAT\\02- MARCA SEAT.png",
+        "tipo": "Logo"
+    }
+}

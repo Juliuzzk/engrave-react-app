@@ -1,10 +1,9 @@
 import React, { useState, useCallback } from "react";
 import axios from "axios";
-
-
+import jsonData from "./logos.json";
 
 function CarDetailsComponent() {
-  const API_URL =  import.meta.env.VITE_API_URL || "http://localhost";
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost";
   const [brand, setBrand] = useState("");
   const [brandEnabled, setBrandEnabled] = useState(false);
   const [plate, setPlate] = useState("");
@@ -17,18 +16,20 @@ function CarDetailsComponent() {
   const [plateSize, setPlateSize] = useState("text-9xl"); // tamaño por defecto para la patente
   const [chassisSize, setChassisSize] = useState("text-7xl"); // tamaño por defecto para el chasis
 
-  const carMarks = {
-    opcion1: {
-      nombre: "Nissan",
-      valor: "\\marks\\NISSAN\\02.jpeg",
-      tipo: "Texto",
-    },
-    opcion2: {
-      nombre: "Nissan",
-      valor: "\\marks\\NISSAN\\01.jpeg",
-      tipo: "Logo",
-    },
-  };
+  // const carMarks = {
+  //   opcion1: {
+  //     nombre: "Nissan",
+  //     valor: "\\marks\\NISSAN\\02.jpeg",
+  //     tipo: "Texto",
+  //   },
+  //   opcion2: {
+  //     nombre: "Nissan",
+  //     valor: "\\marks\\NISSAN\\01.jpeg",
+  //     tipo: "Logo",
+  //   },
+  // };
+
+  const carMarks = jsonData;
 
   let resultRef = React.useRef(null);
   let innerContentRef = React.useRef(null);
