@@ -1,4 +1,4 @@
-require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
+require('dotenv').config({ path: `.env` });
 
 const express = require("express");
 const puppeteer = require("puppeteer");
@@ -28,9 +28,7 @@ app.post("/generate-image", async (req, res) => {
 	try {
 		if(!WEB_DRIVER){
 			browser = await puppeteer.launch({ headless: "new" });
-
 		}else{
-
 			browser = await puppeteer.launch({ executablePath: WEB_DRIVER, headless: "new" });
 		}
 
@@ -44,6 +42,9 @@ app.post("/generate-image", async (req, res) => {
 		await page.setContent(finalHtml);
 		if (brandEnabled)
             await page.waitForSelector("img");
+		
+		if(plateEnabled || chassisEnabled)
+			await page.waitForSelector("p");
        
 		const screenshot = await page.screenshot();
 		res.send(screenshot);
