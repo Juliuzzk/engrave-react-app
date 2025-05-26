@@ -3,7 +3,7 @@ import axios from "axios";
 import jsonData from "./logos.json";
 
 function CarDetailsComponent() {
-  const API_URL = import.meta.env.VITE_API_URL || "http://localhost";
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
   const [brand, setBrand] = useState("");
   const [brandEnabled, setBrandEnabled] = useState(false);
   const [plate, setPlate] = useState("");
@@ -69,8 +69,10 @@ function CarDetailsComponent() {
   const downloadImage = async () => {
     try {
       const imageUrl = brand;
-      console.log(brand);
-      const base64Image = await sendImageAsBase64(imageUrl);
+      let base64Image = "";
+      if (imageUrl) {
+        base64Image = await sendImageAsBase64(imageUrl);
+      }
 
       const response = await axios.post(
         `${API_URL}/generate-image`,
@@ -172,8 +174,11 @@ function CarDetailsComponent() {
             className="form-select p-2 rounded-md w-full mt-2"
           >
             <option value="text-5xl">Tamaño Pequeño</option>
+            <option value="text-6xl">Tamaño Pequeño Medio</option>
             <option value="text-7xl">Tamaño Medio</option>
+            <option value="text-8xl">Tamaño Medio Grange</option>
             <option value="text-9xl">Tamaño Grande</option>
+            <option value="text-[192px]">Tamaño Extra Grande</option>
           </select>
         </div>
 
@@ -202,7 +207,9 @@ function CarDetailsComponent() {
             className="form-select p-2 rounded-md w-full mt-2"
           >
             <option value="text-5xl">Tamaño Pequeño</option>
+            <option value="text-6xl">Tamaño Pequeño Medio</option>
             <option value="text-7xl">Tamaño Medio</option>
+            <option value="text-8xl">Tamaño Medio Grange</option>
             <option value="text-9xl">Tamaño Grande</option>
           </select>
         </div>
